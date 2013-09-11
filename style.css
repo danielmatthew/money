@@ -1,0 +1,68 @@
+body {
+	margin: 0 auto;
+	width: 98%;
+
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+
+
+form {
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 1em;
+}
+
+form:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.input {
+	width: 100%;
+}
+
+input, button {
+	width: 100%;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	border-radius: 0;
+	line-height: 1.6;
+}
+
+fieldset {
+	border: none;
+	padding: 0.125em;
+}
+
+label {
+	display: block;
+}
+
+#outgoings {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#outgoings li {
+	display: block;
+}
+
+@media (min-width: 640px) {
+	body {
+		width: 60%;
+	}
+
+	.input {
+		float: left;
+		width: auto;
+	}
+
+	
+	#totals {
+		text-align: right;
+	}
+}

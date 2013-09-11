@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>money</title>
+
+	<meta charset="UTF8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>money</h1>
+	</header>
+	<div id="content">
+		<form name="income">
+		<fieldset>
+			<legend>Income</legend>
+			<div class="input">
+				<label for="incoming-name">Monthly Income</label>
+				<input type="number" name="incoming-name" placeholder="£2000" required pattern="[0-9]"/>
+			</div>
+			<div class="input">
+				<button type="submit">Add</button>
+			</div>
+			</fieldset>
+		</form>
+		<form name="outgoing-item">
+		<fieldset>
+		<legend>Outgoings</legend>
+		<div class="input">
+			<label for="outgoing-name">Name of outgoing</label>
+			<input type="text" name="outgoing-name" placeholder="Council tax" />
+		</div>
+		<div class="input">
+			<label for="outgoing-cost">Cost of outgoing</label>
+			<input type="number" name="outgoing-cost" />
+		</div>
+		<div class="input">
+			<button type="submit">Add</button>
+		</div>
+		</fieldset>
+		</form>
+		<section id="outgoings">
+			
+		</section>
+		<section id="totals">
+			<h3>Total income: £<span id="computed-income"></span></h3>
+			<h3>Total outgoings: £<span id="computed-total"></span></h3>
+			<h3>Net: £<span id="computed-net"></span></h3>
+		</section>
+	</div>
+</body>
+<script src="app.js"></script
+
+</html>
